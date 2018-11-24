@@ -1,0 +1,27 @@
+type Error {
+  path: String!
+  message: String!
+}
+type Book {
+  book: String
+}
+type Query {
+
+  hello: String
+}
+type Mutation {
+
+  sendForgotPasswordEmail(email: String!): Boolean
+  forgotPasswordChange(newPassword: String!, key: String!): [Error!]
+
+  login(email: String!, password: String!): [Error!]
+
+  logoutUser: Boolean
+
+  register(
+    firstName: String!
+    lastName: String!
+    email: String!
+    password: String!
+  ): [Error]
+}
