@@ -1,4 +1,4 @@
-# typescript_graphql_server_boilerplate_v1
+# typescript_graphql_server_boilerplate_  v1
 A small graphql server boilerplate
 
 ## features
